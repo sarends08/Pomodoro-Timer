@@ -1,0 +1,140 @@
+/*link for tomato image: http://gdurl.com/Hg2n*/
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+	background-image: url("C:/Users/sarah_000/Documents/Pomodoro/tomato.png");
+	background-repeat: repeat;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -25px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 900px;
+}
+
+.timerbg {
+	display: flex;
+	background: #231E32;
+	opacity: 0.9;
+	width: 50%;
+	height: 50%;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:'title title title'
+						'breaklength countdown sessionlength'
+						'start stop reset';
+	grid-gap: 50px;
+	color: #ffffff;
+	font-family: 'Paytone One', sans-serif;
+	font-size: 30px;
+	align-content: center;
+}
+
+.title {
+	grid-area: title;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Paytone One', sans-serif;
+	font-size: 50px;
+	color: #ffffff;
+}
+
+.label {
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+.breaklength {
+	grid-area: breaklength;
+	text-align: center;
+}
+
+.countdown {
+	grid-area: countdown;
+	text-align: center;
+}
+
+.sessionlength {
+	grid-area: sessionlength;
+	text-align: center;
+}
+
+.start {
+	grid-area: start;
+	justify-self: center;
+	align-self: center;
+
+}
+
+.stop {
+	grid-area: stop;
+	justify-self: center;
+	align-self: center;
+}
+
+.reset {
+	grid-area: reset;
+	justify-self: center;
+	align-self: center;
+}
+
+#decreasebreak, #increasebreak, #decreasesession, #increasesession {
+	cursor: pointer;
+}
+
+#decreasebreak:hover, #increasebreak:hover, #decreasesession:hover, #increasesession:hover {
+	color: #a8a8a8;
+}
+
+#start, #stop, #reset{
+	color: #ffffff;
+	font-size: 24px;
+	background-color: #0a823d;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+	cursor: pointer;
+}
+
+#start:hover, #stop:hover, #reset:hover{
+	background-color: #055125;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .page-wrap:after
+{
+  height: 25px;
+}
+
+.footer {
+	color: #ffffff;
+	background: #231E32;
+	opacity: 0.9;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
